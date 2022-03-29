@@ -1,0 +1,129 @@
+.header-container {
+  width: $site-width;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 35px;
+
+  .header-text {
+    font-size: 30px;
+    font-family: $proxima-nova;
+  }
+
+  .blog-rect {
+    width: 106px;
+    height: 2px;
+    background-color: black;
+  }
+}
+
+.blog-container {
+  height: 860px;
+  width: $site-width;
+  margin: 0 auto;
+  margin-bottom: 108px;
+
+  .blog1-container {
+    width: $site-width;
+    height: 385px;
+    display: flex;
+    justify-content: space-between;
+
+    .blog1-date {
+      height: 60px;
+      width: 60px;
+      background-color: $site-blue;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      .number {
+        color: white;
+        font-family: $gill-sans;
+        font-size: 22px;
+        margin-top: 15px;
+      }
+
+      .month {
+        color: white;
+        font-family: $gill-sans;
+        font-size: 12px;
+        margin-top: -15px;
+      }
+    }
+
+    .blog1-right-container {
+      .blog1-img {
+        background-image: url(../images/blog.jpg);
+        height: 259px;
+        width: 900px;
+        background-size: cover;
+        background-position: center;
+      }
+
+      .blog1-text-header {
+        margin-top: 15px;
+        font-family: $gill-sans;
+        font-size: 15px;
+
+        p {
+          width: 380px;
+          color: $site-blue;
+        }
+      }
+    }
+  }
+
+  .blog2-container {
+    margin-top: 100px;
+    width: $site-width;
+    height: 385px;
+    display: flex;
+    justify-content: space-between;
+
+    .blog2-date {
+      height: 60px;
+      width: 60px;
+      background-color: $site-blue;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      .number {
+        color: white;
+        font-family: $gill-sans;
+        font-size: 22px;
+        margin-top: 15px;
+      }
+
+      .month {
+        color: white;
+        font-family: $gill-sans;
+        font-size: 12px;
+        margin-top: -15px;
+      }
+    }
+
+    .blog2-right-container {
+      .blog2-img {
+        background-image: url(../images/blog.jpg);
+        height: 259px;
+        width: 900px;
+        background-size: cover;
+        background-position: center;
+      }
+
+      .blog2-text-header {
+        margin-top: 15px;
+        font-family: $gill-sans;
+        font-size: 15px;
+
+        p {
+          width: 380px;
+          color: $site-blue;
+        }
+      }
+    }
+  }
+}
