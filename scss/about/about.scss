@@ -1,70 +1,55 @@
 .about {
-  margin-top: 110px;
-  margin-bottom: 180px;
+margin-bottom: 95px;
+
+  .about-hero{
+    width: $site-width;
+    height: 378px;
+    background-image: linear-gradient(
+      rgba($site-yellow, 0.7),
+      rgba($site-yellow, 0.7)
+    ),
+    url(../images/about.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 95px;
+    margin-bottom: -25px;
+  }
 
   .about-header {
     h1 {
-      font-family: $proxima-nova;
+      font-family: $gill-sans;
       margin-bottom: 2px;
-      font-size: 60px;
+      font-size: 25px;
     }
     .rect {
-      width: 171px;
+      width: 229px;
       height: 3px;
       background-color: black;
     }
     p {
-      font-size: 16px;
+      font-size: 15px;
       margin-top: 36px;
       font-family: $gill-sans;
     }
   }
 
-  .about-client-quotes {
-    margin-top: 107px;
-    margin-bottom: 179px;
+  
+}
 
-    .client-quote-title {
-      font-size: 60px;
-      font-family: $proxima-nova;
+.blog{
+  margin-bottom: -50px;
+
+  .blog-header {
+    margin-top: 63px;
+    h1 {
+      font-family: $gill-sans;
+      margin-bottom: 2px;
+      font-size: 25px;
     }
-
     .rect {
-      width: 171px;
+      width: 229px;
       height: 3px;
       background-color: black;
-    }
-
-    .client-box {
-      max-width: 722px;
-      display: flex;
-      position: relative;
-      margin-bottom: 37px;
-      margin-top: 36.5px;
-
-      .client-image {
-        width: 260px;
-        height: 150px;
-        overflow: hidden;
-        margin-right: 21px;
-
-        img {
-          width: 100%;
-        }
-      }
-
-      .client-quote {
-        max-width: 440px;
-        margin-bottom: 20px;
-        font-family: $gill-sans;
-      }
-
-      .client-name {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        font-family: $gill-sans;
-      }
     }
   }
 }

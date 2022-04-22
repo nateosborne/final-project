@@ -1,29 +1,11 @@
-.header-container {
-  width: $site-width;
-  margin: 0 auto;
-  margin-top: 50px;
-  margin-bottom: 35px;
-
-  .header-text {
-    font-size: 30px;
-    font-family: $proxima-nova;
-  }
-
-  .blog-rect {
-    width: 106px;
-    height: 2px;
-    background-color: black;
-  }
-}
-
 .blog-container {
-  height: 860px;
-  width: $site-width;
+  height: 124px;
+  width: $banner-footer-width;
   margin: 0 auto;
   margin-bottom: 108px;
 
   .blog1-container {
-    width: $site-width;
+    width: 200px;
     height: 385px;
     display: flex;
     justify-content: space-between;
@@ -53,13 +35,6 @@
     }
 
     .blog1-right-container {
-      .blog1-img {
-        background-image: url(../images/blog.jpg);
-        height: 259px;
-        width: 900px;
-        background-size: cover;
-        background-position: center;
-      }
 
       .blog1-text-header {
         margin-top: 15px;
@@ -73,57 +48,90 @@
       }
     }
   }
+}
 
-  .blog2-container {
-    margin-top: 100px;
-    width: $site-width;
-    height: 385px;
-    display: flex;
-    justify-content: space-between;
 
-    .blog2-date {
-      height: 60px;
-      width: 60px;
-      background-color: $site-blue;
+.blog-total-container{
+  display: flex;
+  width: $site-width;
+  margin: 0 auto;
+  margin-bottom: 86px;
+
+.blog-container{
+  height: 831px;
+  width: $site-width;
+  margin: 0 auto;
+
+
+  .blog-calendar-container{
+
+      height: 124px;
+      margin-top: 120px;
       display: flex;
-      justify-content: center;
-      align-items: center;
+      justify-content: space-between;
       flex-direction: column;
 
-      .number {
-        color: white;
-        font-family: $gill-sans;
-        font-size: 22px;
-        margin-top: 15px;
-      }
+      .blog-calendar1{
+          width: 460px;
+          height: 124px;
+          display: flex;
+          justify-content: space-between;
 
-      .month {
-        color: white;
-        font-family: $gill-sans;
-        font-size: 12px;
-        margin-top: -15px;
-      }
-    }
+          .date{
+              height: 60px;
+              width: 60px;
+              background-color: $site-pink;
 
-    .blog2-right-container {
-      .blog2-img {
-        background-image: url(../images/blog.jpg);
-        height: 259px;
-        width: 900px;
-        background-size: cover;
-        background-position: center;
-      }
+              .date-text{
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  flex-direction: column;
 
-      .blog2-text-header {
-        margin-top: 15px;
-        font-family: $gill-sans;
-        font-size: 15px;
+                  .date-number{
+                      color: white;
+                      font-size: 22px;
+                      font-family: $gill-sans;
+                      margin-top: 8px;
+                  }
 
-        p {
-          width: 380px;
-          color: $site-blue;
-        }
+                  .date-month{
+                      color: white;
+                      font-size: 12px;
+                      font-family: $gill-sans;
+                      margin-top: -12px;
+                  }
+              }
+          }
+
+          .blog-calendar-text{
+              height: 124px;
+              width: 380px;
+
+              .calendar-img{
+                width: 380px;
+                height: 140px;
+                background-image: url(../images/blog.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+              }
+
+              .blog-calendar-toptext{
+                  color: black;
+                  font-family: $gill-sans;
+                  font-size: 15px;
+                  margin-top: 20px;
+              }
+
+              .calendar-bottomtext{
+                  color: $site-pink;
+                  font-family: $gill-sans;
+                  font-size: 15px;
+                  margin-top: 11px;
+                  font-size: 13px;
+              }
+          }
       }
-    }
   }
+}
 }

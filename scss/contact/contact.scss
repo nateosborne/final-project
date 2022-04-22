@@ -5,15 +5,18 @@
   margin-bottom: 35px;
 
   .header-text {
-    font-size: 30px;
-    font-family: $proxima-nova;
+    h1{
+      font-size: 25px;
+    }
+
+    font-family: $gill-sans;
   }
 
-  .contact-rect {
-    width: 159px;
-    height: 2px;
-    background-color: black;
-  }
+  .rect{
+    width: 229px;
+  height: 3px;
+  background-color: black;
+}
 }
 
 .contact-container {
@@ -24,14 +27,6 @@
   justify-content: space-between;
 
   .contact-left {
-    .contact-map {
-      height: 442px;
-      width: 400px;
-      background-image: url(../images/map.png);
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-    }
 
     .contact-text {
       margin-top: 34px;
@@ -41,10 +36,14 @@
     }
   }
 
-  .contact-text {
-    height: 161px;
-    width: 400px;
-  }
+  .contact-map {
+      height: 442px;
+      width: 400px;
+      background-image: url(../images/map.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
 
   .inputs {
     height: 442px;
@@ -66,7 +65,7 @@
     .sendmessage {
       height: 60px;
       width: 168px;
-      background-color: $site-blue;
+      background-color: $site-pink;
       display: flex;
       justify-content: center;
       align-items: center;

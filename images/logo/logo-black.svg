@@ -4,6 +4,6 @@
       <rect width="92" height="38" stroke="none"/>
       <rect x="1" y="1" width="90" height="36" fill="none"/>
     </g>
-    <text id="travel-fly" transform="translate(20 60)" font-size="20" font-family="GillSans, Gill Sans" letter-spacing="0.1em"><tspan x="0" y="0">travel-fly</tspan></text>
+    <text id="eventsy" transform="translate(20 60)" font-size="20" font-family="GillSans, Gill Sans" letter-spacing="0.1em"><tspan x="0" y="0">eventsy</tspan></text>
   </g>
 </svg>

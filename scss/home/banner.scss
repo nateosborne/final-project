@@ -2,10 +2,10 @@
   max-width: $banner-footer-width;
   height: $banner-height;
   background-image: linear-gradient(
-      rgba($site-black, 0.5),
-      rgba($site-black, 0.5)
+      rgba($site-yellow, 0.7),
+      rgba($site-yellow, 0.7)
     ),
-    url(../images/hero.jpg);
+    url(../images/home-hero.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -17,10 +17,23 @@
     align-items: center;
 
     p {
-      font-family: $proxima-nova;
+      font-family: $ptserifregular;
       color: white;
-      font-size: 60px;
+      font-size: 40px;
       margin-top: 160px;
+    }
+  }
+
+  .banner-header1-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p {
+      font-family: $gill-sans;
+      color: $site-pink;
+      font-size: 20px;
+      margin-top: 0px;
     }
   }
 
@@ -43,7 +56,7 @@
     margin: 0 auto;
     height: 40px;
     width: 120px;
-    background-color: #79addc;
+    background-color: $site-pink;
     display: flex;
     justify-content: center;
     align-items: center;

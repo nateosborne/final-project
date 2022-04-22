@@ -110,7 +110,7 @@ nav {
   font-family: GillSans;
 }
 .links span {
-  color: #ffffff;
+  color: #EE4367;
   margin: 0 20px;
 }
 
@@ -143,14 +143,14 @@ nav {
   font-family: GillSans;
 }
 .links-black span {
-  color: #000000;
+  color: #EE4367;
   margin: 0 20px;
 }
 
 .banner {
   max-width: 1280px;
   height: 500px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/hero.jpg);
+  background-image: linear-gradient(rgba(255, 209, 64, 0.7), rgba(255, 209, 64, 0.7)), url(../images/home-hero.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -162,10 +162,21 @@ nav {
   align-items: center;
 }
 .banner .banner-header1 p {
-  font-family: ProximaNovaCondensed;
+  font-family: PTserifRegular;
   color: white;
-  font-size: 60px;
+  font-size: 40px;
   margin-top: 160px;
+}
+.banner .banner-header1-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner .banner-header1-2 p {
+  font-family: GillSans;
+  color: #EE4367;
+  font-size: 20px;
+  margin-top: 0px;
 }
 .banner .banner-header2 {
   display: flex;
@@ -184,7 +195,7 @@ nav {
   margin: 0 auto;
   height: 40px;
   width: 120px;
-  background-color: #79addc;
+  background-color: #EE4367;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -472,10 +483,26 @@ nav {
   font-family: ProximaNovaCondensed;
   src: url(fonts/ProximaNovaScOsfExtraCondensed.ttf);
 }
+@font-face {
+  font-family: PTserifBold;
+  src: url(fonts/PTSerif-Bold.ttf);
+}
+@font-face {
+  font-family: PTserifBoldItalic;
+  src: url(fonts/PTSerif-BoldItalic.ttf);
+}
+@font-face {
+  font-family: PTserifItalic;
+  src: url(fonts/PTSerif-Italic.ttf);
+}
+@font-face {
+  font-family: PTserifRegular;
+  src: url(fonts/PTSerif-Regular.ttf);
+}
 .footer {
   width: 1280px;
-  background-color: #79addc;
-  height: 100px;
+  background-color: #EE4367;
+  height: 455px;
   margin: 0 auto;
   display: flex;
 }
@@ -485,6 +512,8 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-direction: column;
+  padding: 36px;
 }
 .footer .footer-container .logo-footer {
   width: 92px;
@@ -496,73 +525,97 @@ nav {
 .footer .footer-container .logo-footer p {
   margin-top: 23px;
 }
-.footer .footer-container .footer-text {
+.footer .footer-container .address-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .footer-container .address-container .address-text {
   color: white;
+  font-family: GillSans;
+}
+.footer .footer-container .subscribe-container {
+  display: flex;
+}
+.footer .footer-container .subscribe-container .subscribe-left {
+  width: 529px;
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.3);
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.footer .footer-container .subscribe-container .subscribe-left .email-text {
+  margin-top: 15px;
+  font-family: GillSans;
+  color: rgba(255, 255, 255, 0.5);
+  margin-left: -50px;
+}
+.footer .footer-container .subscribe-container .subscribe-right {
+  width: 167px;
+  height: 60px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .footer-container .subscribe-container .subscribe-right .sub-text {
+  color: #EE4367;
+  font-family: GillSans;
+  margin-top: 15px;
+}
+.footer .footer-container .footer-text {
+  color: rgba(255, 255, 255, 0.5);
   font-family: GillSans;
 }
 .footer .footer-container .icons {
   color: white;
-  font-size: 20px;
+  font-size: 30px;
 }
 
 .about {
-  margin-top: 110px;
-  margin-bottom: 180px;
+  margin-bottom: 95px;
+}
+.about .about-hero {
+  width: 980px;
+  height: 378px;
+  background-image: linear-gradient(rgba(255, 209, 64, 0.7), rgba(255, 209, 64, 0.7)), url(../images/about.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 95px;
+  margin-bottom: -25px;
 }
 .about .about-header h1 {
-  font-family: ProximaNovaCondensed;
+  font-family: GillSans;
   margin-bottom: 2px;
-  font-size: 60px;
+  font-size: 25px;
 }
 .about .about-header .rect {
-  width: 171px;
+  width: 229px;
   height: 3px;
   background-color: black;
 }
 .about .about-header p {
-  font-size: 16px;
+  font-size: 15px;
   margin-top: 36px;
   font-family: GillSans;
 }
-.about .about-client-quotes {
-  margin-top: 107px;
-  margin-bottom: 179px;
+
+.blog {
+  margin-bottom: -50px;
 }
-.about .about-client-quotes .client-quote-title {
-  font-size: 60px;
-  font-family: ProximaNovaCondensed;
+.blog .blog-header {
+  margin-top: 63px;
 }
-.about .about-client-quotes .rect {
-  width: 171px;
+.blog .blog-header h1 {
+  font-family: GillSans;
+  margin-bottom: 2px;
+  font-size: 25px;
+}
+.blog .blog-header .rect {
+  width: 229px;
   height: 3px;
   background-color: black;
-}
-.about .about-client-quotes .client-box {
-  max-width: 722px;
-  display: flex;
-  position: relative;
-  margin-bottom: 37px;
-  margin-top: 36.5px;
-}
-.about .about-client-quotes .client-box .client-image {
-  width: 260px;
-  height: 150px;
-  overflow: hidden;
-  margin-right: 21px;
-}
-.about .about-client-quotes .client-box .client-image img {
-  width: 100%;
-}
-.about .about-client-quotes .client-box .client-quote {
-  max-width: 440px;
-  margin-bottom: 20px;
-  font-family: GillSans;
-}
-.about .about-client-quotes .client-box .client-name {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  font-family: GillSans;
 }
 
 .tour-hero {
@@ -1572,30 +1625,14 @@ nav {
   text-decoration: none;
 }
 
-.header-container {
-  width: 980px;
-  margin: 0 auto;
-  margin-top: 50px;
-  margin-bottom: 35px;
-}
-.header-container .header-text {
-  font-size: 30px;
-  font-family: ProximaNovaCondensed;
-}
-.header-container .blog-rect {
-  width: 106px;
-  height: 2px;
-  background-color: black;
-}
-
 .blog-container {
-  height: 860px;
-  width: 980px;
+  height: 124px;
+  width: 1280px;
   margin: 0 auto;
   margin-bottom: 108px;
 }
 .blog-container .blog1-container {
-  width: 980px;
+  width: 200px;
   height: 385px;
   display: flex;
   justify-content: space-between;
@@ -1621,13 +1658,6 @@ nav {
   font-size: 12px;
   margin-top: -15px;
 }
-.blog-container .blog1-container .blog1-right-container .blog1-img {
-  background-image: url(../images/blog.jpg);
-  height: 259px;
-  width: 900px;
-  background-size: cover;
-  background-position: center;
-}
 .blog-container .blog1-container .blog1-right-container .blog1-text-header {
   margin-top: 15px;
   font-family: GillSans;
@@ -1637,49 +1667,77 @@ nav {
   width: 380px;
   color: #79addc;
 }
-.blog-container .blog2-container {
-  margin-top: 100px;
+
+.blog-total-container {
+  display: flex;
   width: 980px;
-  height: 385px;
+  margin: 0 auto;
+  margin-bottom: 86px;
+}
+.blog-total-container .blog-container {
+  height: 831px;
+  width: 980px;
+  margin: 0 auto;
+}
+.blog-total-container .blog-container .blog-calendar-container {
+  height: 124px;
+  margin-top: 120px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.blog-total-container .blog-container .blog-calendar-container .blog-calendar1 {
+  width: 460px;
+  height: 124px;
   display: flex;
   justify-content: space-between;
 }
-.blog-container .blog2-container .blog2-date {
+.blog-total-container .blog-container .blog-calendar-container .blog-calendar1 .date {
   height: 60px;
   width: 60px;
-  background-color: #79addc;
+  background-color: #EE4367;
+}
+.blog-total-container .blog-container .blog-calendar-container .blog-calendar1 .date .date-text {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.blog-container .blog2-container .blog2-date .number {
+.blog-total-container .blog-container .blog-calendar-container .blog-calendar1 .date .date-text .date-number {
   color: white;
-  font-family: GillSans;
   font-size: 22px;
-  margin-top: 15px;
-}
-.blog-container .blog2-container .blog2-date .month {
-  color: white;
   font-family: GillSans;
+  margin-top: 8px;
+}
+.blog-total-container .blog-container .blog-calendar-container .blog-calendar1 .date .date-text .date-month {
+  color: white;
   font-size: 12px;
-  margin-top: -15px;
+  font-family: GillSans;
+  margin-top: -12px;
 }
-.blog-container .blog2-container .blog2-right-container .blog2-img {
+.blog-total-container .blog-container .blog-calendar-container .blog-calendar1 .blog-calendar-text {
+  height: 124px;
+  width: 380px;
+}
+.blog-total-container .blog-container .blog-calendar-container .blog-calendar1 .blog-calendar-text .calendar-img {
+  width: 380px;
+  height: 140px;
   background-image: url(../images/blog.jpg);
-  height: 259px;
-  width: 900px;
   background-size: cover;
-  background-position: center;
+  background-repeat: no-repeat;
 }
-.blog-container .blog2-container .blog2-right-container .blog2-text-header {
-  margin-top: 15px;
+.blog-total-container .blog-container .blog-calendar-container .blog-calendar1 .blog-calendar-text .blog-calendar-toptext {
+  color: black;
   font-family: GillSans;
   font-size: 15px;
+  margin-top: 20px;
 }
-.blog-container .blog2-container .blog2-right-container .blog2-text-header p {
-  width: 380px;
-  color: #79addc;
+.blog-total-container .blog-container .blog-calendar-container .blog-calendar1 .blog-calendar-text .calendar-bottomtext {
+  color: #EE4367;
+  font-family: GillSans;
+  font-size: 15px;
+  margin-top: 11px;
+  font-size: 13px;
 }
 
 .header-container {
@@ -1689,12 +1747,14 @@ nav {
   margin-bottom: 35px;
 }
 .header-container .header-text {
-  font-size: 30px;
-  font-family: ProximaNovaCondensed;
+  font-family: GillSans;
 }
-.header-container .contact-rect {
-  width: 159px;
-  height: 2px;
+.header-container .header-text h1 {
+  font-size: 25px;
+}
+.header-container .rect {
+  width: 229px;
+  height: 3px;
   background-color: black;
 }
 
@@ -1705,23 +1765,19 @@ nav {
   display: flex;
   justify-content: space-between;
 }
-.contact-container .contact-left .contact-map {
-  height: 442px;
-  width: 400px;
-  background-image: url(../images/map.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
 .contact-container .contact-left .contact-text {
   margin-top: 34px;
   font-family: GillSans;
   font-size: 18px;
   margin-bottom: 100px;
 }
-.contact-container .contact-text {
-  height: 161px;
+.contact-container .contact-map {
+  height: 442px;
   width: 400px;
+  background-image: url(../images/map.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .contact-container .inputs {
   height: 442px;
@@ -1741,7 +1797,7 @@ nav {
 .contact-container .inputs .sendmessage {
   height: 60px;
   width: 168px;
-  background-color: #79addc;
+  background-color: #EE4367;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1751,4 +1807,181 @@ nav {
   font-size: 16px;
   color: white;
   margin-top: 15px;
+}
+
+.home-content {
+  height: 300px;
+  background-color: white;
+  margin: 0 auto;
+  max-width: 1280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home-content .home-content-container {
+  max-width: 789px;
+}
+.home-content .home-content-container .home-content-text {
+  color: #ffd140;
+  font-family: GillSans;
+}
+.home-content .home-content-container .john {
+  font-family: PTserifRegular;
+  font-size: 15px;
+  color: #EE4367;
+}
+.home-content .home-content-container .ceo {
+  font-family: PTserifRegular;
+  font-size: 10px;
+  color: #A8A8A8;
+}
+
+.events {
+  height: 320px;
+  width: 1280px;
+  background-color: #540D6E;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.events .upcoming-container {
+  width: 1198px;
+  margin: 0 auto;
+}
+.events .upcoming-container .upcoming {
+  color: white;
+  font-family: GillSans;
+  font-size: 25px;
+}
+.events .upcoming-container .underline {
+  height: 1px;
+  width: 392px;
+  background-color: white;
+}
+.events .calendar-container {
+  width: 1198px;
+  height: 124px;
+  display: flex;
+  justify-content: space-between;
+}
+.events .calendar-container .calendar1 {
+  width: 220px;
+  height: 124px;
+  display: flex;
+  justify-content: space-between;
+}
+.events .calendar-container .calendar1 .date {
+  height: 60px;
+  width: 60px;
+  background-color: #EE4367;
+}
+.events .calendar-container .calendar1 .date .date-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.events .calendar-container .calendar1 .date .date-text .date-number {
+  color: white;
+  font-size: 22px;
+  font-family: GillSans;
+  margin-top: 8px;
+}
+.events .calendar-container .calendar1 .date .date-text .date-month {
+  color: white;
+  font-size: 12px;
+  font-family: GillSans;
+  margin-top: -12px;
+}
+.events .calendar-container .calendar1 .calendar-text {
+  height: 124px;
+  width: 140px;
+}
+.events .calendar-container .calendar1 .calendar-text .calendar-toptext {
+  color: white;
+  font-family: GillSans;
+  font-size: 15px;
+}
+.events .calendar-container .calendar1 .calendar-text .calendar-bottomtext {
+  color: #EE4367;
+  font-family: GillSans;
+  font-size: 15px;
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+.gallery-header {
+  width: 980px;
+  margin: 0 auto;
+  margin-top: 63px;
+}
+.gallery-header h1 {
+  font-size: 25px;
+  font-family: GillSans;
+}
+.gallery-header .rect {
+  width: 229px;
+  height: 3px;
+  background-color: black;
+}
+
+.topimages {
+  width: 980px;
+  height: 187px;
+  margin: 0 auto;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.topimages .img1 {
+  height: 187px;
+  width: 489px;
+  background-image: linear-gradient(rgba(255, 209, 64, 0.7), rgba(255, 209, 64, 0.7)), url(../images/gallery/1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.topimages .img2 {
+  height: 187px;
+  width: 187px;
+  background-image: linear-gradient(rgba(238, 67, 103, 0.7), rgba(238, 67, 103, 0.7)), url(../images/gallery/2.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.topimages .img3 {
+  height: 187px;
+  width: 265px;
+  background-image: linear-gradient(rgba(8, 173, 105, 0.7), rgba(8, 173, 105, 0.7)), url(../images/gallery/3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bottomimages {
+  width: 980px;
+  height: 306px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+.bottomimages .img4 {
+  height: 306px;
+  width: 603px;
+  background-image: linear-gradient(rgba(84, 13, 110, 0.7), rgba(84, 13, 110, 0.7)), url(../images/gallery/4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.bottomimages .img5 {
+  height: 306px;
+  width: 355px;
+  background-image: linear-gradient(rgba(59, 206, 171, 0.7), rgba(59, 206, 171, 0.7)), url(../images/gallery/5.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
